@@ -121,6 +121,13 @@ html,body{height: 100%;}
 /*-------------------------------------
         2. Header-top
 --------------------------------------*/
+
+.active-link {
+    color: red;
+    font-weight: bold; 
+}
+
+
 .header-top{border-bottom:1px solid #f6f8fa;}
 
 .header-top ul li {display: inline-block;}
@@ -241,6 +248,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 /*-------------------------------------
         4.  Welcome-hero
 --------------------------------------*/
+
 .welcome-hero {
     position: relative;
     background:url(../images/welcome-hero/banner.jpg)no-repeat;
@@ -348,6 +356,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .list-topics-content ul li { display: inline-block;}
 
+.list-topics-content ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
 .single-list-topics-content{
     display: flex;
     align-items: center;
@@ -366,6 +380,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     -o-transition:.3s linear;
     transition: .3s linear;
 }
+
+.single-list-topics-content {
+    flex: 1 1 18%;
+    text-align: center;
+    margin: 10px;
+}
+
 .single-list-topics-content h2>a { margin: 13px 0;}
 /*.single-list-topics-content:last-child{margin-right: 0;}*/
 
